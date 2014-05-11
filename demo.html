@@ -1,11 +1,12 @@
 <html>
   <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Bootstrap Rating Input Demo</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <!--script src="src/bootstrap-rating-input.js"></script-->
-    <script src="build/bootstrap-rating-input.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="star-rating.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="src/bootstrap-rating-input.js"></script>
     <style>
       body {
         font-size: 20px;
@@ -22,7 +23,31 @@
   </head>
   <body>
     <h1>The Bootstrap Rating Input <small>in action...</small></h1>
+    <p>My rating: 
+      <input type="number" name="your_awesome_parameter" id="some_id" class="rating" data-caption="['很差', '较差', '还行', '推荐', '力荐']" value="" data-min="1" data-max="5" />
+    </p>
 
-    <p>My rating: <input type="number" name="your_awesome_parameter" id="some_id" class="rating" data-clearable="remove"/></p>
+    <!--这里使用了安卓市场的代码来显示静态的分值-->
+    <div class="star_bg star_half_s star_margin"></div>
+    <div class="star_bg star_1_s star_margin"></div>
+    <div class="star_bg star_1half_s star_margin"></div>
+    <div class="star_bg star_2_s star_margin"></div>
+    <div class="star_bg star_2half_s star_margin"></div>
+    <div class="star_bg star_3_s star_margin"></div>
+    <div class="star_bg star_3half_s star_margin"></div>
+    <div class="star_bg star_4_s star_margin"></div>
+    <div class="star_bg star_4half_s star_margin"></div>
+    <div class="star_bg star_5_s star_margin"></div>
+
+    <div class="star_bg star_half_m star_margin"></div>
+    <div class="star_bg star_1_m star_margin"></div>
+    <div class="star_bg star_1half_m star_margin"></div>
+    <div class="star_bg star_2_m star_margin"></div>
+    <div class="star_bg star_2half_m star_margin"></div>
+    <div class="star_bg star_3_m star_margin"></div>
+    <div class="star_bg star_3half_m star_margin"></div>
+    <div class="star_bg star_4_m star_margin"></div>
+    <div class="star_bg star_4half_m star_margin"></div>
+    <div class="star_bg star_5_m star_margin"></div>
   </body>
 </html>
